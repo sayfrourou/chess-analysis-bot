@@ -4,7 +4,7 @@
 // @namespace   sayfpack13
 // @author      sayfpack13
 // @version     6.6
-// @homepageURL https://github.com/sayfrourou/chess.com-cheat
+// @homepageURL https://github.com/sayfrourou/chess-analysis-bot
 // @supportURL  https://mmgc.life/
 // @match       https://www.chess.com/*
 // @match       https://lichess.org/*
@@ -17,11 +17,11 @@
 // @description:fr 	Notre système d'analyse d'échecs est conçu pour donner aux joueurs l'avantage dont ils ont besoin pour gagner. En utilisant des algorithmes avancés et des technologies de pointe, notre système peut analyser n'importe quelle position d'échecs et suggérer le meilleur coup possible, aidant les joueurs à prendre des décisions plus intelligentes et plus éclairées sur l'échiquier.
 // @require     https://greasyfork.org/scripts/460400-usergui-js/code/userguijs.js?version=1152084
 // @resource    jquery.js       	https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js
-// @resource    chessboard.js   	https://raw.githubusercontent.com/sayfrourou/chess.com-cheat/main/tampermonkey%20script/content/chessboard.js
-// @resource    chessboard.css  	https://raw.githubusercontent.com/sayfrourou/chess.com-cheat/main/tampermonkey%20script/content/chessboard.css
-// @resource    lozza.js        	https://raw.githubusercontent.com/sayfrourou/chess.com-cheat/main/tampermonkey%20script/content/lozza.js
-// @resource    stockfish-5.js  	https://raw.githubusercontent.com/sayfrourou/chess.com-cheat/main/tampermonkey%20script/content/stockfish-5.js
-// @resource    stockfish-2018.js   https://raw.githubusercontent.com/sayfrourou/chess.com-cheat/main/tampermonkey%20script/content/stockfish-2018.js
+// @resource    chessboard.js   	https://raw.githubusercontent.com/sayfrourou/chess-analysis-bot/main/tampermonkey%20script/content/chessboard.js
+// @resource    chessboard.css  	https://raw.githubusercontent.com/sayfrourou/chess-analysis-bot/main/tampermonkey%20script/content/chessboard.css
+// @resource    lozza.js        	https://raw.githubusercontent.com/sayfrourou/chess-analysis-bot/main/tampermonkey%20script/content/lozza.js
+// @resource    stockfish-5.js  	https://raw.githubusercontent.com/sayfrourou/chess-analysis-bot/main/tampermonkey%20script/content/stockfish-5.js
+// @resource    stockfish-2018.js   https://raw.githubusercontent.com/sayfrourou/chess-analysis-bot/main/tampermonkey%20script/content/stockfish-2018.js
 // @run-at      document-start
 // @inject-into content
 // ==/UserScript==
@@ -29,7 +29,7 @@
 
 
 // VARS
-const repositoryRawURL = 'https://raw.githubusercontent.com/sayfrourou/chess.com-cheat/main/tampermonkey%20script';
+const repositoryRawURL = 'https://raw.githubusercontent.com/sayfrourou/chess-analysis-bot/main/tampermonkey%20script';
 const LICHESS_API = "https://lichess.org/api/cloud-eval";
 
 const MAX_DEPTH = 20;
